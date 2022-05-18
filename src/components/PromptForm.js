@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Dropdown, DropdownButton, Form } from 'react-bootstrap'
-import Responses from './Responses';
 
 export default function PromptForm(props) {
   const [prompt, setPrompt] = useState('');
