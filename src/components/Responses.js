@@ -10,8 +10,8 @@ function Responses(props) {
   return (
     <div className='app-container-item'>
       <h1><b>Responses</b></h1>
+      {props.loading && <Spinner animation="border" variant="primary" style={{ marginLeft: '49%' }} />}
       <div className={styles.cardContainer}>
-        {props.loading && <Spinner animation="border" variant="primary" style={{ marginLeft: '49%' }} />}
         {props.responseList && props.responseList.slice().reverse().map((response, idx) =>
           <Card key={idx} style={{
             width: '100%',
