@@ -1,5 +1,4 @@
 {
-  "homepage": ".",
   "name": "funwithai",
   "version": "0.1.0",
   "private": true,
@@ -38,6 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
-  
+  },
+  "proxy": "https://api.openai.com/v1/engines"
 }
