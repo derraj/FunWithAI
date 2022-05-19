@@ -24,7 +24,7 @@ export default function PromptForm(props) {
       presence_penalty: 0.0,
     };
 
-    fetch(`/${selectedEngine}/completions`, {
+    fetch(`https://api.openai.com/v1/engines/${selectedEngine}/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
