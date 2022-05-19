@@ -24,11 +24,12 @@ export default function PromptForm(props) {
       presence_penalty: 0.0,
     };
 
-    fetch(`https://api.openai.com/v1/engines/${selectedEngine}/completions`, {
+    fetch(`/${selectedEngine}/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.REACT_APP_OPENAI_SECRET}`,
+
       },
       body: JSON.stringify(data),
     }).then(response => response.json())
